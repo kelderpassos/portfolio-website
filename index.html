@@ -9,29 +9,28 @@
     <script src="https://kit.fontawesome.com/c02ec5141b.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="main-container">
-      <header class="header-container">
+    <div id="header-container">
+      <header>
         <div class="image-container">
           <img src="images/logo.png" alt="Kelder's logo" />
         </div>
         <nav>
           <ul>
             <li>
-              <a href="">Inicio</a>
+              <a href="#header-container">Inicio</a>
             </li>
             <li>
-              <a href="">Sobre mim</a>
+              <a href="#about-container">Sobre mim</a>
             </li>
             <li>
-              <a href="">Portfólio</a>
+              <a href="#portfolio-container">Portfólio</a>
             </li>
             <li>
-              <a href="">Contato</a>
+              <a href="#contact-container">Contato</a>
             </li>
           </ul>
         </nav>
       </header>
-
       <div class="welcome">
         <article>
           <p>Olá, eu sou</p>
@@ -41,11 +40,14 @@
         </article>
         <img src="images/background.png" alt="" />
       </div>
+      <div class="navigation-welcome">
+        <a href="#about-container"><i class="fa-solid fa-arrow-down"></i></a>
+      </div>
     </div>
     <!-- --- about --- -->
-    <div class="about-container">
+    <div id="about-container">
       <h1>Sobre mim</h1>
-      <div>
+      <div class="about">
         <section class="about-text">
           <article>
             <p>
@@ -70,7 +72,6 @@
             </p>
           </article>
         </section>
-        <div class="teste"></div>
         <section class="about-skills">
           <div>
             <h2>Habilidades técnicas</h2>
@@ -98,9 +99,16 @@
           </div>
         </section>
       </div>
+      <div class="">
+
+      </div>
+      <div class="navigation">
+        <a href="#header-container"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#portfolio-container"><i class="fa-solid fa-arrow-down"></i></a>
+      </div>
     </div>
     <!------ portfolio -------->
-    <div class="portfolio-container">
+    <div id="portfolio-container">
       <h1>Portfólio</h1>
       <div class="portfolio-projects">
           <section>
@@ -146,6 +154,7 @@
             <h4>Vehicle Dealership</h4>
             <p>
               Api para gerenciar o banco de dados de uma concessionária de veículos.
+              É possível cadastrar, visualizar, deletar e atualizar carros e motos
             </p>
             <h4>Tecnologias</h4>
             <ul>
@@ -156,37 +165,47 @@
             </ul>
           </section>
       </div>
+      <div class="navigation">
+        <a href="#about-container"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#contact-container"><i class="fa-solid fa-arrow-down"></i></a>
+      </div>
     </div>
     <!------ contact -------->
-    <div class="contact-container">
+    <div id="contact-container">
       <h1>Contato</h1>
       <p>Você consegue me contactar pelos links abaixo</p>
-      <div>
+      <div class="links-container">
         <section>
-          <a href="https://www.linkedin.com/in/kelderpassos/">
+          <a href="https://www.linkedin.com/in/kelderpassos/" class="links">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </section>
         <section>
-          <a href="https://github.com/kelderpassos">
+          <a href="https://github.com/kelderpassos" class="links">
             <i class="fa-brands fa-github"></i>
           </a>
         </section>
         <section>
-          <a href="mailto:kelder.passos@gmail.com">
+          <a href="mailto:kelder.passos@gmail.com" class="links">
             <i class="fa-regular fa-envelope"></i>
           </a>
         </section>
       </div>
       <p>Ou pode deixar seus dados no formulário abaixo que eu entro em contato contigo</p>
-      <div class="form-container">
-        <form action="">
-          <input name="name" placeholder="Seu nome" required type="text">
-          <input name="email" placeholder="Seu e-mail" required type="email">
-          <textarea name="message" placeholder="Sua mensagem" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+      <form>
+        <input name="name" placeholder="Seu nome" required type="text">
+        <input name="email" placeholder="Seu e-mail" required type="email">
+        <textarea name="message" placeholder="Sua mensagem" rows="6" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <a href="images/curriculo.pdf" download class="download">Baixar currículo</a>
+      <div class="navigation">
+        <a href="#portfolio-container"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#header-container"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
       </div>
+      <footer>
+        Feito em HTML e CSS por Kelder Passos
+      </footer>  
     </div>
   </body>
 </html>
