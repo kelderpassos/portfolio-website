@@ -192,20 +192,39 @@
         </section>
       </div>
       <p>Ou pode deixar seus dados no formulário abaixo que eu entro em contato contigo</p>
-      <form>
+      <form method="post" name="submit-to-google-sheet">
         <input name="name" placeholder="Seu nome" required type="text">
         <input name="email" placeholder="Seu e-mail" required type="email">
-        <textarea name="message" placeholder="Sua mensagem" rows="6" required></textarea>
+        <textarea name="message" placeholder="Sua mensagem" rows="6"></textarea>
         <button type="submit">Enviar</button>
       </form>
+      <p id="form-sent"></p>
       <a href="images/curriculo.pdf" download class="download">Baixar currículo</a>
       <div class="navigation">
         <a href="#portfolio-container"><i class="fa-solid fa-arrow-up"></i></a>
         <a href="#header-container"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
       </div>
       <footer>
-        Feito em HTML e CSS por Kelder Passos
+        Feito em HTML, CSS e Javascript puros por Kelder Passos
       </footer>  
     </div>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwKDgWuWNroek2rmES0w4OoO0MUyy1xlS-ZrKHQgaDKzhvZxpM-rvxusKaB4G3x8AQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const formSent = document.getElementById('form-sent')
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            formSent.innerHTML = "Mensagem enviada com sucesso"
+            setTimeout(function() {
+              formSent.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
