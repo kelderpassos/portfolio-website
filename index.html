@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Kelder Passos</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c02ec5141b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="main-container">
@@ -102,9 +103,8 @@
     <div class="portfolio-container">
       <h1>Portfólio</h1>
       <div class="portfolio-projects">
-        <a href="https://my-music-app-kelderpassos.vercel.app/">
           <section>
-            <a href="https://github.com/kelderpassos/vehicle-dealership">
+            <a href="https://my-music-app-kelderpassos.vercel.app/">
               <img src="images/my-musicApp.png" class="project-img"/>
             </a>
             <h4>myMusic App</h4>
@@ -120,14 +120,15 @@
               <li>Testes unitários</li>
             </ul>
           </section>
-        </a>
           <section>
-            <a href="https://github.com/kelderpassos/vehicle-dealership">
+            <a href="https://github.com/kelderpassos/soccer-championship-api">
               <img src="images/tfc_classificacao.png" class="project-img"/>
             </a>
             <h4>Soccer Championship Api</h4>
             <p>
               Api de resultados e dados de um campeonato de futebol.
+              É possível visualizar partidas em andamento ou finalizadas, alterar o placar
+              de partidas em andamento, adicionar novas partidas
             </p>
             <h4>Tecnologias</h4>
             <ul>
@@ -135,6 +136,7 @@
               <li>MySQL / Sequelize</li>
               <li>Testes de integração</li>
               <li>React / Javascript</li>
+              <li>Docker</li>
             </ul>
           </section>
           <section>
@@ -144,21 +146,47 @@
             <h4>Vehicle Dealership</h4>
             <p>
               Api para gerenciar o banco de dados de uma concessionária de veículos.
-              Foi feita em Node.js com Typescript e Sequelize.
-              Está 100% coberta por testes de integração.
             </p>
             <h4>Tecnologias</h4>
             <ul>
               <li>Node.js / Typescript</li>
               <li>MongoDB / Mongoose</li>
-              <li>Testes de unitários</li>
+              <li>Testes unitários</li>
+              <li>Docker</li>
             </ul>
           </section>
       </div>
     </div>
     <!------ contact -------->
-    <div>
-      
+    <div class="contact-container">
+      <h1>Contato</h1>
+      <p>Você consegue me contactar pelos links abaixo</p>
+      <div>
+        <section>
+          <a href="https://www.linkedin.com/in/kelderpassos/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </section>
+        <section>
+          <a href="https://github.com/kelderpassos">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </section>
+        <section>
+          <a href="mailto:kelder.passos@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </section>
+      </div>
+      <p>Ou pode deixar seus dados no formulário abaixo que eu entro em contato contigo</p>
+      <div class="form-container">
+        <form action="">
+          <input name="name" placeholder="Seu nome" required type="text">
+          <input name="email" placeholder="Seu e-mail" required type="email">
+          <textarea name="message" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

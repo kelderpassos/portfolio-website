@@ -204,9 +204,57 @@ nav ul li a:hover::after {
 .project-img {
   height: 20rem;
   width: 30rem;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .project-img:hover {
   opacity: 1;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 60%;
+  margin-top: 5rem;
+}
+
+.contact-container h1 {
+  margin-bottom: 2rem;
+}
+
+.contact-container p {
+  font-size: 1.3rem;
+}
+
+.contact-container div {
+  display: flex;
+  justify-content: space-between;
+   
+
+  padding: 2rem;
+  width: 40rem;
+}
+
+.contact-container section {
+  padding: 2rem;
+}
+
+.contact-container i {
+  font-size: 50px;
+}
+
+.contact-container a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5rem;
+  border: solid red 1px;
 }
