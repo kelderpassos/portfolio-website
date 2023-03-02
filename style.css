@@ -374,13 +374,12 @@ footer {
 }
 
 /* ---- small screens ---- */
-@media (max-width: 1350px) {
+@media (max-width: 1800px) {
   html {
     font-size: 85%;
   }
 
   .welcome {
-    margin-top: 0;
     margin-bottom: 3rem;
   }
 
@@ -398,7 +397,7 @@ footer {
 
   .welcome img {
     margin-top: 30px;
-    width: 20rem;
+    width: 30rem;
   }
   
   #about-container {
@@ -473,21 +472,23 @@ footer {
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1600px) {
+  #header-container {
+    height: 150vh;
+  }
+
   .welcome {
-    margin-top: 15%;
-    margin-bottom: 5rem;
-    padding: 0 2rem;
+    margin-top: 0;
+    margin-bottom: 7rem;
   }
 
   .about {
     flex-direction: column;
     align-items: center;
   }
-  
-  #about-container > div {
-    display: flex;
-    margin-top: 0;
+
+  #about-container {
+    height: 180vh;
   }
   
   .about-text article {
@@ -497,9 +498,9 @@ footer {
   .about-skills {
     margin-bottom: 2rem;
   }
-
+  
   #portfolio-container {
-    height: 200vh;
+    height: 250vh;
   }
   
   .portfolio-projects {
