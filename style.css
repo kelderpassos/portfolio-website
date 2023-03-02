@@ -474,7 +474,8 @@ footer {
 
 @media (max-width: 1600px) {
   #header-container {
-    height: 150vh;
+    height: 130vh;
+
   }
 
   .welcome {
@@ -514,13 +515,26 @@ footer {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1080px) {
   html {
     font-size: 85%;
   }
 
+  #header-container {
+    height: 150vh;
+  }
+
   .about-text p {
     font-size: 16px;
+  }
+
+  #portfolio-container {
+    height: 300vh;
+    margin-top: 5rem;
+  }
+
+  #contact-container {
+    height: 180vh;
   }
 }
 
