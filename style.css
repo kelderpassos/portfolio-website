@@ -538,65 +538,66 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   html {
     font-size: 85%;
   }
-
+  
   #header-container {
-    height: 90vh;
+    height: 120vh;
   }
-
+  
   #header-container nav a {
     font-size: 14px;
   }
+  
   nav ul li {
     margin: 0 0 5px 50px;
   }
-
+  
   .welcome {
     flex-direction: column;
     align-items: center;
     margin-top: 1px;
     padding: 0;
   }
-
+  
   .title h1 {
     font-size: 20px;
   }
-
+  
   .title p {
     font-size: 16px;
   }
-
+  
   .title img{
     margin-top: 30px;
     width: 20rem;
   }
-
+  
   .navigation-welcome a {
     padding: 1.5rem;
   }
-
+  
   #about-container {
-    height: 140vh;
+    height: 160vh;
   }
   
   .about {
     flex-direction: column;
     align-items: center;
   }
-
+  
   #about-container > h1 {
     font-size: 20px;
   }
   
   .about-text article {
     font-size: 15px;
-  
+    
     margin-right: 0rem;
     margin-bottom: 2rem;
-
+    
     width: 23rem;
   }
   
@@ -613,9 +614,9 @@ footer {
     height: 1.7rem;
     width: 6rem;
   }
-
+  
   #portfolio-container {
-    height: 200vh;
+    height: 220vh;
   }
   
   .portfolio-projects {
