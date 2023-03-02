@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfólio Kelder Passos</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" media="all"/>
     <script src="https://kit.fontawesome.com/c02ec5141b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header-container">
       <header>
         <div class="image-container">
-          <img src="images/logo.png" alt="Kelder's logo" />
+          <img src="images/logo.png" alt="Kelder's logo"/>
         </div>
         <nav>
           <ul>
@@ -32,24 +32,25 @@
         </nav>
       </header>
       <div class="welcome">
-        <article>
-          <p>Olá, eu sou</p>
-          <h1>Kelder Passos</h1>
-          <h2>desenvolvedor web full stack</h2>
-          <p>Seja bem vindo ao meu Portfólio!</p>
-        </article>
-        <img src="images/background.png" alt="" />
+        <div class="title">
+          <h1>Olá, eu sou<br/><strong>Kelder Passos</strong></h1>
+          <p><span>desenvolvedor web full stack</span><br/>
+          Seja bem vindo ao meu Portfólio!</p><br/>
+        </div>
+
+
+        <img src="images/background.png" alt=""/>
       </div>
       <div class="navigation-welcome">
         <a href="#about-container"><i class="fa-solid fa-arrow-down"></i></a>
       </div>
     </div>
-    <!-- --- about --- -->
+
     <div id="about-container">
-      <h1>Sobre mim</h1>
       <div class="about">
-        <section class="about-text">
+        <div class="about-text">
           <article>
+            <h2>Sobre mim</h2>
             <p>
               Meu nome completo é Kelder Mendonça Passos e eu desenvolvo
               plataformas online. Comecei meus estudos nesta área em janeiro de
@@ -57,13 +58,13 @@
               desenvolvimento por dentro, estudando por mais de 1500 horas no
               bootcamp da Trybe.
             </p>
-            <br />
+            <br/>
             <p>
               De lá pra cá, estudei muita lógica de programação e conceitos como
               código limpo (clean code), estrutura de dados e complexidade de
               algoritmos a fim de aprimorar a qualidade das minhas aplicações.
             </p>
-            <br />
+            <br/>
             <p>
               Possuo forte habilidade comunicacional, sendo também fluente na
               língua inglesa, senso de equipe e proatividade. Me acostumo a
@@ -71,7 +72,7 @@
               sempre na base do diálogo.
             </p>
           </article>
-        </section>
+        </div>
         <section class="about-skills">
           <div>
             <h2>Habilidades técnicas</h2>
@@ -79,7 +80,7 @@
             <div class="about-skills-img-container">
               <img
                 src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                alt="" />
+                alt="Typescript badge"/>
               <img
                 src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"
                 alt="" />
@@ -99,21 +100,18 @@
           </div>
         </section>
       </div>
-      <div class="">
-
-      </div>
       <div class="navigation">
         <a href="#header-container"><i class="fa-solid fa-arrow-up"></i></a>
         <a href="#portfolio-container"><i class="fa-solid fa-arrow-down"></i></a>
       </div>
     </div>
-    <!------ portfolio -------->
+
     <div id="portfolio-container">
       <h1>Portfólio</h1>
       <div class="portfolio-projects">
           <section>
             <a href="https://my-music-app-kelderpassos.vercel.app/">
-              <img src="images/my-musicApp.png" class="project-img"/>
+              <img src="images/my-musicApp.png" alt="my-musicApp site" class="project-img"/>
             </a>
             <h4>myMusic App</h4>
             <p>
@@ -130,7 +128,7 @@
           </section>
           <section>
             <a href="https://github.com/kelderpassos/soccer-championship-api">
-              <img src="images/tfc_classificacao.png" class="project-img"/>
+              <img src="images/tfc_classificacao.png" alt="soccer-championship-api frontend" class="project-img"/>
             </a>
             <h4>Soccer Championship Api</h4>
             <p>
@@ -149,7 +147,7 @@
           </section>
           <section>
             <a href="https://github.com/kelderpassos/vehicle-dealership">
-              <img src="images/vehicle-dealership.png" class="project-img"/>
+              <img src="images/vehicle-dealership.png" alt="vehicle-dealership request" class="project-img"/>
             </a>
             <h4>Vehicle Dealership</h4>
             <p>
@@ -170,26 +168,26 @@
         <a href="#contact-container"><i class="fa-solid fa-arrow-down"></i></a>
       </div>
     </div>
-    <!------ contact -------->
+
     <div id="contact-container">
       <h1>Contato</h1>
       <p>Você consegue me contactar pelos links abaixo</p>
       <div class="links-container">
-        <section>
+        <div>
           <a href="https://www.linkedin.com/in/kelderpassos/" class="links">
             <i class="fa-brands fa-linkedin"></i>
           </a>
-        </section>
-        <section>
+        </div>
+        <div>
           <a href="https://github.com/kelderpassos" class="links">
             <i class="fa-brands fa-github"></i>
           </a>
-        </section>
-        <section>
+        </div>
+        <div>
           <a href="mailto:kelder.passos@gmail.com" class="links">
             <i class="fa-regular fa-envelope"></i>
           </a>
-        </section>
+        </div>
       </div>
       <p>Ou pode deixar seus dados no formulário abaixo que eu entro em contato contigo</p>
       <form method="post" name="submit-to-google-sheet">

@@ -77,30 +77,34 @@ nav ul li a:hover::after {
 
 .welcome {
   display: flex;
-  font-size: larger;
-  justify-content: space-around;
-  padding: 0 15rem;
-  
+  justify-content: space-evenly;
   margin-top: 5%;
   margin-bottom: 8rem;
+  
+  width: 100%;
 }
 
-.welcome article {
-  margin-top: 10%;
+.title {
+
+  margin-top: 5rem;
 }
 
-.welcome h1 {
+.title h1 {
+  font-size: 28px;
+  margin: 10rem 10rem 0 0;
+}
+
+.title strong {
   font-size: 60px;
-  margin-top: 10px;
 }
 
-.welcome h2 {
+
+.title span {
   color: #daa520;
 }
 
-.welcome p {
-  font-size: larger;
-  margin-top: 15px;
+.title p {
+  font-size: 28px;
 }
 
 .welcome img {
@@ -140,7 +144,6 @@ nav ul li a:hover::after {
 }
 
 .about-text article {
-  font-size: 18px;
   text-align: justify;
 
   margin-right: 50px;
@@ -149,6 +152,15 @@ nav ul li a:hover::after {
 
   border: solid 1px #FFF;
   border-radius: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .about-skills {
@@ -357,7 +369,7 @@ footer {
 
 /* ---- small screens ---- */
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   #header-container nav a {
     font-size: 14px;
   }
@@ -496,11 +508,11 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1080px) {
-    .welcome {
-    margin-top: 0px;
-    padding: 10rem;
-    margin-bottom: 2rem;
+@media (max-width: 1080px) {
+  .welcome {
+    margin-top: 15%;
+    margin-bottom: 5rem;
+    padding: 0 2rem;
   }
 
   .about {
