@@ -85,7 +85,6 @@ nav ul li a:hover::after {
 }
 
 .title {
-
   margin-top: 5rem;
 }
 
@@ -127,6 +126,10 @@ nav ul li a:hover::after {
   color: #FFF;
 }
 
+.navigation-welcome a:hover {
+  background-color: #FFF;
+  color: black;
+}
 
 
 
@@ -371,117 +374,78 @@ footer {
 }
 
 /* ---- small screens ---- */
-
-@media (max-width: 600px) {
-  #header-container nav a {
-    font-size: 14px;
-  }
-  nav ul li {
-    margin: 0 0 5px 50px;
+@media (max-width: 1250px) {
+  html {
+    font-size: 85%;
   }
 
   .welcome {
-    flex-direction: column;
-    margin-top: 1px;
-    padding: 0;
-    margin-bottom: 4rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
   }
 
   .title h1 {
     font-size: 25px;
   }
 
-  .title h2 {
-    font-size: 18px;
+  .title strong {
+    font-size: 32px;
   }
 
   .title p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
-  .title img{
+  .welcome img {
     margin-top: 30px;
     width: 20rem;
   }
-
-  .navigation-welcome a {
-    padding: 1.5rem;
-  }
-
+  
   #about-container {
-    height: 180vh;
+    height: 100vh;
   }
   
-  .about {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #about-container > h1 {
-    font-size: 20px;
+  #about-container > div {
+    margin-top: 2rem;
   }
   
-  .about-text article {
-    font-size: 15px;
-  
-    margin-right: 0rem;
-    margin-bottom: 2rem;
-
-    width: 23rem;
-  }
-  
-  .about-skills {
-    width: 23rem;
-    font-size: 12px;
+  .about-text p {
+    font-size: 16px;
   }
   
   .about-skills li {
-    font-size: 14px;
+    font-size: 15px;
+    margin-left: 2rem;
   }
   
-  .about-skills-img-container img{
-    height: 1.7rem;
-    width: 6rem;
+  .about-skills h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
   }
-
+  
   #portfolio-container {
-    height: 260vh;
+    height: 280vh;
   }
-
+  
   .portfolio-projects {
     flex-direction: column;
     align-items: center;
   }
   
   .portfolio-projects section {
-    align-items: center;
-    
-    margin: 1rem;
-    width: 23rem;
-  }
-  
-  .portfolio-projects h4 {
+    height: 30rem;
     margin: 1rem 0;
   }
   
   .project-img {
-    height: 18rem;
+    height: 10rem;
     width: 20rem;
-    opacity: 1;
   }
 
   #contact-container {
-    height: 115vh;
+    height: 165vh;
     margin-top: 0;
-  }
-  
-  #contact-container h1 {
-    font-size: 20px;
-  }
-  
-  #contact-container p {
-    font-size: 1rem;
-    text-align: center;
   }
   
   .links-container {
@@ -490,25 +454,23 @@ footer {
   }
   
   .links i {
-    font-size: 40px;
+    font-size: 35px;
+    margin: 1.5rem 0;
   }
   
   form {
-    width: 23rem;
+    height: 18rem;
   }
-  
-  footer {
-    font-size: 15px;
-    margin-top: 5rem;
+
+  .download {
+    margin-top: 0.5rem;
   }
   
   .navigation {
-    justify-content: space-evenly;
-    width: 80%;
-  }
-  
-  .navigation a { 
-    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+    width: 20%;
   }
 }
 
@@ -562,59 +524,84 @@ footer {
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 600px) {
   html {
     font-size: 85%;
   }
 
+  #header-container {
+    height: 90vh;
+  }
+
+  #header-container nav a {
+    font-size: 14px;
+  }
+  nav ul li {
+    margin: 0 0 5px 50px;
+  }
+
   .welcome {
-    margin-top: 0;
-    margin-bottom: 3rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1px;
+    padding: 0;
   }
 
   .title h1 {
-    font-size: 25px;
-  }
-
-  .title strong {
-    font-size: 32px;
-  }
-
-  .title p {
     font-size: 20px;
   }
 
-  .welcome img {
+  .title p {
+    font-size: 16px;
+  }
+
+  .title img{
     margin-top: 30px;
     width: 20rem;
   }
-  
+
+  .navigation-welcome a {
+    padding: 1.5rem;
+  }
+
   #about-container {
-    height: 100vh;
+    height: 140vh;
   }
   
-  #about-container > div {
-    margin-top: 2rem;
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about-container > h1 {
+    font-size: 20px;
   }
   
-  .about-text p {
-    font-size: 16px;
+  .about-text article {
+    font-size: 15px;
+  
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+
+    width: 23rem;
+  }
+  
+  .about-skills {
+    width: 23rem;
+    font-size: 12px;
   }
   
   .about-skills li {
-    font-size: 15px;
-    margin-left: 2rem;
+    font-size: 14px;
   }
   
-  .about-skills h3 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 16px;
+  .about-skills-img-container img{
+    height: 1.7rem;
+    width: 6rem;
   }
-  
 
   #portfolio-container {
-    height: 280vh;
+    height: 200vh;
   }
   
   .portfolio-projects {
@@ -623,18 +610,32 @@ footer {
   }
   
   .portfolio-projects section {
-    height: 30rem;
+    height: 42rem;
+    width: 23rem;
+  }
+  
+  .portfolio-projects h4 {
     margin: 1rem 0;
   }
   
   .project-img {
-    height: 10rem;
+    height: 18rem;
     width: 20rem;
+    opacity: 1;
   }
 
   #contact-container {
-    height: 165vh;
+    height: 100vh;
     margin-top: 0;
+  }
+  
+  #contact-container h1 {
+    font-size: 20px;
+  }
+  
+  #contact-container p {
+    font-size: 1rem;
+    text-align: center;
   }
   
   .links-container {
@@ -643,22 +644,70 @@ footer {
   }
   
   .links i {
-    font-size: 35px;
-    margin: 1.5rem 0;
+    font-size: 40px;
   }
   
   form {
-    height: 18rem;
+    width: 23rem;
   }
-
-  .download {
-    margin-top: 0.5rem;
+  
+  footer {
+    font-size: 15px;
+    margin-top: 5rem;
   }
   
   .navigation {
-    display: flex;
-    justify-content: space-between;
-    
-    width: 20%;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  
+  .navigation a { 
+    padding: 1.5rem;
   }
 }
+
+@media (max-width: 400px) {
+  html {
+    font-size: 85%;
+  }
+
+  #header-container {
+    height: 110vh;
+  }
+  
+  .welcome {
+    height: 35rem;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .title h1 {
+    font-size: 18px;
+    margin-left: 13rem;
+    width: 15rem;
+  }
+
+  .title strong {
+    font-size: 20px;
+  }
+
+  #about-container {
+    height: 180vh;
+  }
+  
+  #portfolio-container {
+    height: 280vh;
+    margin-top: 2rem;
+  }
+  
+  #contact-container {
+    height: 120vh;
+  }
+}
+
