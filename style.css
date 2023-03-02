@@ -91,7 +91,7 @@ nav ul li a:hover::after {
 
 .title h1 {
   font-size: 28px;
-  margin: 10rem 10rem 0 0;
+  margin: 5rem 10rem 0 0;
 }
 
 .title strong {
@@ -108,7 +108,7 @@ nav ul li a:hover::after {
 }
 
 .welcome img {
-  width: 38rem;
+  width: 30rem;
 }
 
 .navigation-welcome {
@@ -127,7 +127,8 @@ nav ul li a:hover::after {
   color: #FFF;
 }
 
-/* --- about --- */
+
+
 
 #about-container {
   display: flex;
@@ -197,7 +198,8 @@ nav ul li a:hover::after {
   width: 8rem;
 }
 
-/* ---- portfolio ---- */
+
+
 
 #portfolio-container {
   display: flex;
@@ -341,10 +343,11 @@ footer {
   margin-top: 10rem;
   padding-right: 1rem;
   width: 100%;
-  /* border: solid red 1px; */
 }
 
-/* ---- buttons for navigation ---- */
+
+
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -384,19 +387,19 @@ footer {
     margin-bottom: 4rem;
   }
 
-  .welcome article h1 {
+  .title h1 {
     font-size: 25px;
   }
 
-  .welcome article h2 {
+  .title h2 {
     font-size: 18px;
   }
 
-  .welcome article p {
+  .title p {
     font-size: 16px;
   }
 
-  .welcome img{
+  .title img{
     margin-top: 30px;
     width: 20rem;
   }
@@ -464,6 +467,7 @@ footer {
   .project-img {
     height: 18rem;
     width: 20rem;
+    opacity: 1;
   }
 
   #contact-container {
@@ -531,7 +535,6 @@ footer {
   
   .about-skills {
     margin-bottom: 2rem;
-
   }
 
   #portfolio-container {
@@ -546,5 +549,116 @@ footer {
   .navigation {
     justify-content: space-evenly;
     width: 30%;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 85%;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 85%;
+  }
+
+  .welcome {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .title h1 {
+    font-size: 25px;
+  }
+
+  .title strong {
+    font-size: 32px;
+  }
+
+  .title p {
+    font-size: 20px;
+  }
+
+  .welcome img {
+    margin-top: 30px;
+    width: 20rem;
+  }
+  
+  #about-container {
+    height: 100vh;
+  }
+  
+  #about-container > div {
+    margin-top: 2rem;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+  }
+  
+  .about-skills li {
+    font-size: 15px;
+    margin-left: 2rem;
+  }
+  
+  .about-skills h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+  }
+  
+
+  #portfolio-container {
+    height: 280vh;
+  }
+  
+  .portfolio-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portfolio-projects section {
+    height: 30rem;
+    margin: 1rem 0;
+  }
+  
+  .project-img {
+    height: 10rem;
+    width: 20rem;
+  }
+
+  #contact-container {
+    height: 165vh;
+    margin-top: 0;
+  }
+  
+  .links-container {
+    padding: 0rem;
+    width: 23rem;
+  }
+  
+  .links i {
+    font-size: 35px;
+    margin: 1.5rem 0;
+  }
+  
+  form {
+    height: 18rem;
+  }
+
+  .download {
+    margin-top: 0.5rem;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 20%;
   }
 }
