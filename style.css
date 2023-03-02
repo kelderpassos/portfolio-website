@@ -374,7 +374,7 @@ footer {
 }
 
 /* ---- small screens ---- */
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
   html {
     font-size: 85%;
   }
@@ -402,7 +402,7 @@ footer {
   }
   
   #about-container {
-    height: 100vh;
+    height: 90vh;
   }
   
   #about-container > div {
@@ -425,7 +425,7 @@ footer {
   }
   
   #portfolio-container {
-    height: 280vh;
+    height: 210vh;
   }
   
   .portfolio-projects {
@@ -444,8 +444,7 @@ footer {
   }
 
   #contact-container {
-    height: 165vh;
-    margin-top: 0;
+    height: 120vh;
   }
   
   .links-container {
